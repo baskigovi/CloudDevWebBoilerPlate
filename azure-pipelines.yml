@@ -10,6 +10,9 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- task: CopyPublishBuildArtifacts@1
+  inputs:
+    ArtifactName: 
 - task: CopyFiles@2
   inputs:
     SourceFolder: 'web'
